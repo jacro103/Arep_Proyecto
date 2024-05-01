@@ -1,0 +1,311 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+
+}
+header{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+}
+header .container{
+    flex-direction: row;
+    justify-content: space-between;
+}
+header nav{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+header a{
+    padding: 22px 15px;
+    text-decoration: none;
+    
+}
+
+.logo{
+    width: 200px;
+    padding: 0;
+    margin: 5px;
+    
+}
+
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 1110px;
+}
+
+.menu-horizontal > li > a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-horizontal > li:hover{
+    background-color: aqua
+}
+
+.menu-vertical{
+    list-style: none;
+    position: absolute;
+    display: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu-vertical > li > a{
+    display: flex;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+.menu-vertical li:hover .menu-vertical{
+    display: block;
+}
+.menu-vertical li:hover{
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    padding-top: 100px;
+    background-color: white;   
+}
+
+#inicio{
+    margin: 100px;
+}
+
+#inicio .liimg{
+    padding-left: 50px;
+    margin: 0px;
+    width: 350px;
+    padding-bottom: 10px;
+}
+
+
+#inicio .container{
+    display: inline-block;
+    justify-content: center;
+    padding-top: 0;
+    padding-left: 50px ;
+    
+}
+
+#inicio .titulo {
+    margin-top: 0;
+    font-size: 100px;
+    text-align: initial;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    
+}
+#inicio .inic{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#inicio .descripcion{
+    font-size: 22px;
+}
+
+#inicio .registro{
+    margin-top: 0;
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+}
+
+.registro {
+    display: inline-block;
+    padding: 26px 0px 26px 0px;
+    border: 1px solid #222222;
+    border-radius: 32px;
+    background-color: #222222;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 0;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.registro:hover {
+    background-color: transparent;
+    color: #222222; 
+    text-decoration: none;
+}
+
+#descripcion{
+    background: #222222;
+    color: #ffffff;
+}
+
+#descripcion .container{
+    display: inline-block;
+    justify-content: center;
+    padding-top: 0px;
+    padding: 50px ;
+    margin: 65px;
+
+}
+
+#descripcion .d{
+    padding-left: 750px;
+    justify-content: center;
+    font-size: 35px;
+}
+
+#descripcion h3{
+    font-weight: normal;
+}
+
+#articulos{
+    margin: 100px;
+}
+
+.slider{
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+.slider .slider-track{
+    display: flex;
+    animation: scroll 100s linear infinite;
+    -webkit-animation: scroll 100s linear infinite;
+    width: calc(200px * 16);
+}
+
+.slider .slide{
+    width: 200px;
+    display: inline-block;
+}
+
+.slider .slide .img {
+    width: 100%;
+    padding-left: 5px;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform : translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 8));
+        transform : translateX(calc(-200px * 8));
+    }
+}
+
+#servicios{
+    background: #222222;
+    color: #ffffff;
+    
+}
+
+#servicios .container{
+    background: #222222;
+    color: #ffffff;
+    padding-top: 0px;
+    padding: 50px ;
+    margin: 50px;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-item {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service-item .img {
+    width: 100px;
+    color: white;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.service-item h3 {
+    margin-top: 10px;
+}
+
+.service-item p {
+    margin-top: 5px;
+}
+
+
+footer{
+    align-items: center;
+    
+}
+
+footer .menu-footer{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+footer .menu-footer li{
+    padding: 0px 47px;
+}
+
+.menu-footer h4{
+    font-size: 20px;
+    color: #222222;
+    margin-bottom: 25px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+footer .descripcion p{
+    width: 200px;
+    height: auto;
+    resize: vertical; 
+    font-size: 18px;
+    color:#222222;
+    
+}
+
+footer .menu-footer ul{
+    list-style: none;
+}
+
+footer .menu-footer ul a{
+    list-style: none;
+    text-decoration: none;
+    color: #222222;
+    font-size: 18px;
+    display: block;
+    transition: all .3s ease;
+    padding-top: 5px;
+}
+
+footer .menu-footer ul a:hover{
+    color: black;
+    padding-left: 7px;
+}

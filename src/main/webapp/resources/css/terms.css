@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+
+}
+header{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+}
+header .container{
+    flex-direction: row;
+    justify-content: space-between;
+}
+header nav{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+header a{
+    padding: 22px 15px;
+    text-decoration: none;
+    
+}
+
+.logo{
+    width: 200px;
+    padding: 0;
+    margin: 5px;
+    
+}
+
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 1110px;
+}
+
+.menu-horizontal > li > a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-horizontal > li:hover{
+    background-color: aqua
+}
+
+.menu-vertical{
+    list-style: none;
+    position: absolute;
+    display: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu-vertical > li > a{
+    display: flex;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+.menu-vertical li:hover .menu-vertical{
+    display: block;
+}
+.menu-vertical li:hover{
+    background-color: black;
+}
+
+.container{
+    
+    
+    align-items: center;
+}
+
+main{
+    padding-top: 100px;
+    background-color: white;   
+    margin-left: 10px;
+}
+
+footer{
+    background-color: #222222;
+    align-items: center;
+    color: white;
+}
+
+footer .menu-footer{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+footer .menu-footer li{
+    padding: 0px 47px;
+}
+
+.menu-footer h4{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 25px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+footer .descripcion p{
+    width: 200px;
+    height: auto;
+    resize: vertical; 
+    font-size: 18px;
+    color:white;
+    
+}
+
+footer .menu-footer ul{
+    list-style: none;
+}
+
+footer .menu-footer ul a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    transition: all .3s ease;
+    padding-top: 5px;
+}
+
+footer .menu-footer ul a:hover{
+    color: white;
+    padding-left: 7px;
+}

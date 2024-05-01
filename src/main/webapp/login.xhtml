@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3c.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:p="http://primefaces.org/ui"
+xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+
+    
+    <h:head>
+        <title>Login</title>
+    </h:head>
+    <h:body>
+        <div class="content">
+            <p:graphicImage name="login-imagen.png" library=""/>
+            <div class="box">
+                <h:form id="queries_form">
+                    <h1 align = "center">Login</h1>
+                    <br></br>
+                    <div class="container">
+                        <span class="ui-float-label">
+                            <p:inputText id="float-input" value="#{loginUser.name}" required="true"/>
+                            <p:outputLabel for="@previous" value="Username"/>
+                        </span>
+                    </div>
+                    <br></br>
+                    <div class="container">
+                        <span class="ui-float-label">
+                            <p:password id="feedback" value="#{loginUser.password}" required="true"/>
+                            <p:outputLabel for="@previous" value="Password"/>
+                        </span>
+                    </div>
+                    <br></br>
+                    <div class="divboton">
+                        <p:commandButton value="Ingresar" action="#{loginUser.login()}" update="queries_form" styleClass="button"></p:commandButton>
+                    </div>
+                </h:form>
+            </div>
+        </div>
+
+        <h:outputStylesheet name="login.css" library="css"/>
+    </h:body>
+</html>

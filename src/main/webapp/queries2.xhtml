@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3c.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:p="http://primefaces.org/ui"
+xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+
+    
+    <h:head>
+        <title>Progamar Consulta</title>
+        
+    </h:head>
+    <h:body>
+        <div class="content">
+            <div class="titulo">
+                <h1>Programe su consulta</h1>
+            </div>
+            <div class="box">
+                <div class="box-form">
+                    <h:form id="queries_form">
+                        <div class="container">
+                            <p:outputLabel for="nombre" styleClass="text">Nombre </p:outputLabel>
+                            <p:inputText id="nombre" value="#{administracionBean.nombre}" required="true" styleClass="input"/>
+                        </div>
+                        <div class="container">
+                            <p:outputLabel for="apellido" styleClass="text">Apellido</p:outputLabel>
+                            <p:inputText id="apellido" value="#{administracionBean.apellido}" required="true" styleClass="input"/>
+                        </div>
+                        <div class="container">
+                            <p:outputLabel for="correo" styleClass="text">Correo</p:outputLabel>
+                            <p:inputText id="correo" value="#{administracionBean.correo}" required="true" styleClass="input"/>
+                        </div>
+                        <div class="container">
+                            <p:outputLabel for="telefono" styleClass="text">Telefono</p:outputLabel>
+                            <p:inputText id="telefono" value="#{administracionBean.telefono}" required="true" styleClass="input"/>
+                        </div>
+                        <div class="container">
+                            <p:outputLabel for="observacion" styleClass="text">Observacion</p:outputLabel>
+                            <p:inputTextarea id="observacion" value="#{administracionBean.observacion}" required="true" styleClass="input"/>
+                        </div>
+                        <div class="container">
+                            <p:outputLabel for="fecha" value="Fecha"/>
+                            <p:datePicker id="fecha" value="#{administracionBean.horario}" showTime="true" required="true" />
+                        </div>
+                        <div class="container">
+                            <p:outputLabel for="firma" styleClass="text">Firme aqui: </p:outputLabel>
+                            <p:signature id="firma" class="signature" style="width:280px;height:70px" widgetVar="sig" value="#{administracionBean.firma}"
+                                            required="true"/>        
+                        </div>
+                        <br></br>
+                        <div class="block">
+                            <p:commandButton value="Submit" update="queries_form" action="#{administracionBean.agregarConsulta()}"  styleClass="button"></p:commandButton>
+                        </div>
+                    </h:form>
+                    <div class="container">
+                        <p>Al enviar este formulario esta aceptando nuestros <a href="terms.xhtml">Terminos y condiciones</a></p>
+                    </div>
+
+                </div>
+                <div class="box-info">
+
+                    <h2>Contacto</h2>
+                    <br></br>
+                    <br></br>
+                    <ul>
+                        <li>1730 Park St Suite 203, Naperville IL 60563</li>
+                        <br></br>
+                        <br></br>
+                        <li>+1 773 309 2121</li>
+                        <br></br>
+                        <br></br>
+                        <li>inmigracionayuda@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h:outputStylesheet name="queries.css" library="css"/>
+    </h:body>
+</html>
