@@ -14,8 +14,8 @@ import javax.mail.internet.MimeMessage;
 public class EnviarMail {
     private static String emailEnvio = "halsservicesltd@gmail.com";
     private static String passwordEnvio = "rwbptgqqiyxsylpj";
-    private String asunto = "Confirmacion de Agendamiento de Consulta - Hals Services";
-    private String contenido = "Estimado usuario, nos permitimos informarle que su consulta ha sido agendada correctamente.";
+    private String asunto = "Confirmacion de consulta de gestion de inventario Services";
+    private String contenido = "Estimado usuario, nos permitimos informarle que su consulta se esta verificando.";
     private Properties propiedades;
     private Session sesion;
     private MimeMessage correo;

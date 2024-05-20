@@ -88,10 +88,10 @@ main{
     margin: 100px;
 }
 
-#inicio .liimg{
+#inicio .ges{
     padding-left: 50px;
     margin: 0px;
-    width: 350px;
+    width: 100px;
     padding-bottom: 10px;
 }
 
@@ -309,3 +309,4 @@ footer .menu-footer ul a:hover{
     color: black;
     padding-left: 7px;
 }
+

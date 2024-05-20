@@ -1,157 +1,93 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3c.org/1999/xhtml"
-xmlns:h="http://java.sun.com/jsf/html"
-xmlns:p="http://primefaces.org/ui"
-xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
-    
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
     <h:head>
-        <title>Terminos y condiciones</title>
-        
+        <title>Términos y Condiciones</title>
+        <h:outputStylesheet name="terms.css" library="css"/>
     </h:head>
     <h:body>
         <header>
             <div class="container">
                 <nav>
                     <div class="log">
-                        <p:link id="logo" href="index.xhtml" target="_blank">
-                            <p:graphicImage class="logo" value="images/imagen-login.png" alt="Logo de la empresa" />
-                        </p:link>
-                    </div>  
+                        <h:link outcome="index.xhtml" target="_blank">
+                            <p:graphicImage class="logo" value="images/logo.png" alt="Logo de la empresa" />
+                        </h:link>
+                    </div>
                     <ul class="menu-horizontal">
-                        <li><a href="index.xhtml">Inicio</a></li>
-                        <li><a href="#descripcion">Descripcion</a></li>
-                        <li><a href="#">Servicios</a></li>
-                        <li><a href="queries2.xhtml">Citas</a></li>
+                        <li><h:link outcome="index.xhtml">Inicio</h:link></li>
+                        <li><h:link outcome="index.xhtml#descripcion">Descripción</h:link></li>
+                        <li><h:link outcome="#">Servicios</h:link></li>
+                        <li><h:link outcome="queries2.xhtml">Citas</h:link></li>
                         <li>
                             <a href="#">Importante</a>
                             <ul class="menu-vertical">
-                                <li><a href="#">Terminos y condiciones</a></li>
-                                <li><a href="#">Privacidad</a></li>
+                                <li><h:link outcome="terms.xhtml">Términos y condiciones</h:link></li>
+                                <li><h:link outcome="#">Privacidad</h:link></li>
                             </ul>
                         </li>
-                        <li><a href="login.xhtml">Login</a></li>
+                        <li><h:link outcome="login.xhtml">Login</h:link></li>
                     </ul>
                 </nav>
             </div>
         </header>
         <main>
-            <h1>Terminos y Condiciones</h1>
+            <h1>Términos y Condiciones</h1>
             <div class="container">
-                <p class="p-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada fames. Malesuada nunc vel risus commodo. Eget egestas purus viverra accumsan in nisl nisi. Pellentesque elit ullamcorper dignissim cras tinci.</p>
-                <h2 class="mb-3">1. Lorem ipsum dolor sit amet consectetur</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada fames. Malesuada nunc vel risus commodo. Eget egestas purus viverra accumsan in nisl nisi. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis et leo duis ut</p>
-                <p class="mb-5">Et leo duis ut diam quam nulla. Purus in mollis nunc sed id semper. Aenean euismod elementum nisi quis. Mauris a diam maecenas sed enim. Amet commodo nulla facilisi nullam vehicula ipsum a. Morbi tristique senectus et netus et. Lobortis feugiat vivamus at augue eget arcu. Amet aliquam id diam maecenas ultricies.</p>
-
-                <h2 class="mb-3">2. In dictum non consectetur a erat nam</h2>
-                <p>Malesuada nunc vel risus commodo. Eget egestas purus viverra accumsan in nisl nisi. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Et leo duis ut diam quam nulla. Purus in mollis nunc sed id semper. Aenean euismod elementum nisi quis. Mauris a diam maecenas sed enim. Amet commodo nulla facilisi nullam.</p>
-                <p class="mb-4">Malesuada nunc vel risus commodo. Eget egestas purus viverra accumsan in nisl nisi. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Et leo duis ut diam quam nulla. Purus in mollis nunc sed id semper. Aenean euismod elementum nisi quis. Mauris a diam maecenas sed enim. Amet commodo nulla facilisi.</p>
-                <ul class="list-unstyled li-space-lg mb-4">
-                    <li class="d-flex">
-                        <i class="fas fa-square"></i>
-                        <div class="flex-grow-1"><strong>Lobortis feugiat</strong> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada fames abore et</div>
-                    </li>
-                    <li class="d-flex">
-                        <i class="fas fa-square"></i>
-                        <div class="flex-grow-1"><strong>Amet commodo nulla</strong> suada nunc vel risus commodo. Eget egestas purus viverra accumsan in nisl nisi. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Et leo duis ut diam</div>
-                    </li>
-                    <li class="d-flex">
-                        <i class="fas fa-square"></i>
-                        <div class="flex-grow-1"><strong>Malesuada nunc vel</strong> euismod elementum nisi quis. Mauris a diam maecenas sed enim. Amet commodo nulla facilisi nullam vehicula ipsum a. Morbi tristique senectus et netus et lobortis feugiat</div>
-                    </li>
-                </ul>
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada fames. Malesuada nunc vel risus commodo. Eget egestas purus viverra accumsan in nisl nisi. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis et leo</p>
-
-                <h2 class="mb-3">3. Aenean euismod elementum nisi quis</h2>
-                <p class="mb-5">Amet commodo nulla facilisi nullam vehicula ipsum a. Morbi tristique senectus et netus et. Lobortis feugiat vivamus at augue eget arcu. Amet aliquam id diam maecenas ultricies mi eget. Nisl purus in mollis nunc sed id semper risus. In dictum non consectetur a erat nam. Et tortor consequat id porta nibh venenatis.</p>
-                <h3>3.1. Rhoncus mattis rhoncus urna neque viverra</h3>
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada fames. Malesuada nunc vel risus commodo. Eget egestas purus viverra accumsan in nisl nisi. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis.</p>
-                <h3>3.2. Et leo duis ut diam quam nulla purus in mollis</h3>
-                <p class="mb-4">Aenean euismod elementum nisi quis. Mauris a diam maecenas sed enim. Amet commodo nulla facilisi nullam vehicula ipsum a. Morbi tristique senectus et netus et. Lobortis feugiat vivamus at augue eget arcu. Amet aliquam id diam maecenas ultricies mi eget. Nisl purus in mollis nunc sed id semper risus in dictu.</p>
-                <ul class="list-unstyled li-space-lg mb-5">
-                    <li class="d-flex">
-                        <i class="fas fa-square"></i>
-                        <div class="flex-grow-1"><strong>Malesuada nunc</strong> lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
-                    </li>
-                    <li class="d-flex">
-                        <i class="fas fa-square"></i>
-                        <div class="flex-grow-1"><strong>Vel risus commodo</strong> malesuada nunc vel risus commodo. Eget egestas purus viverra accumsan in ni</div>
-                    </li>
-                    <li class="d-flex">
-                        <i class="fas fa-square"></i>
-                        <div class="flex-grow-1"><strong>Eget egestas </strong> purus in mollis nunc sed id semper. Aenean euismod elementum nisi quis uris</div>
-                    </li>
-                    <li class="d-flex">
-                        <i class="fas fa-square"></i>
-                        <div class="flex-grow-1"><strong>Et leo duis</strong> morbi tristique senectus et netus et. Lobortis feugiat vivamus at augue e</div>
-                    </li>
-                    <li class="d-flex">
-                        <i class="fas fa-square"></i>
-                        <div class="flex-grow-1"><strong>Ut diam quam</strong> amet aliquam id diam maecenas ultricies mi eget. Nisl purus in molli</div>
-                    </li>
-                </ul>
-                <h2 class="mb-3">4. Lorem ipsum dolor sit amet consectetur adipis</h2>
-                <p class="mb-4">Malesuada nunc vel risus commodo. Eget egestas purus viverra accumsan in nisl nisi. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Et leo duis ut diam quam nulla. Purus in mollis nunc sed id semper. Aenean euismod elementum nisi quis. Mauris a diam maecenas sed enim amet commodo nulla</p>
-                <ol class="list-unstyled li-space-lg mb-5">
-                    <li class="d-flex">
-                        <div class="flex-grow-1"><strong>Facilisi nullam</strong> em ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada fames. Malesu nunc vel risus commodo</div>
-                    </li>
-                    <li class="d-flex">
-                        <div class="flex-grow-1"><strong>Vehicula ipsum</strong> et leo duis ut diam quam nulla. Purus in mollis nunc sed id semper. Aenean euismod elementum nisi quis. Mauris a diam maecenas sed enim. Amet commodo nulla facilisi nullam vehicula ipsum a morbi</div>
-                    </li>
-                    <li class="d-flex">
-                        <div class="flex-grow-1"><strong>Malesuada nunc</strong> obortis feugiat vivamus at augue eget arcu. Amet aliquam id diam maecenas ultricies mi eget. Nisl purus in mollis nunc sed id semper risus. In dictum non consectetur a erat nam et tortor</div>
-                    </li>
-                    <li class="d-flex">
-                        <div class="flex-grow-1"><strong>Aenean euismod</strong> malesuada nunc vel risus commodo. Eget egestas purus viverra accumsan in nisl nisi. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Et leo duis ut diam quam nulla</div>
-                    </li>
-                    <li class="d-flex">
-                        <div class="flex-grow-1"><strong>Amet commo</strong> entum nisi quis. Mauris a diam maecenas sed enim. Amet commodo nulla facilisi nullam vehicula ipsum a. Morbi tristique senectus et netus et. Lobortis feugiat vivamus at augue eget arcu. Amet aliquam id diam</div>
-                    </li>
-                </ol>
-                <div class="text-box mb-5">
-                    <h3>Malesuada nunc vel risus commodo eget egestas purus</h3>
-                    <p>Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Et leo duis ut diam quam nulla. Purus in mollis nunc sed id semper. Aenean euismod elementum nisi quis. Mauris a diam maecenas sed enim. Amet commodo nulla facilisi nullam vehicula ipsum a. Morbi tristique senectus et netus et. Lobortis feugiat vivamus at augue eget arcu. Amet aliquam id diam maecenas ultricies mi eget nisl purus.</p>
-                </div> <!-- end of text-box -->
-                <p class="mb-5">Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Et leo duis ut diam quam nulla. Purus in mollis nunc sed id semper. Aenean euismod elementum nisi quis. Mauris a diam maecenas sed enim. Amet commodo nulla facilisi nullam vehicula ipsum a. Morbi tristique senectus et netus et.</p>
+                <p class="p-large">Bienvenido a nuestra página web. Si continúas navegando y utilizando este sitio web, aceptas cumplir y estar obligado por los siguientes términos y condiciones de uso, que junto con nuestra política de privacidad rigen la relación de [Nombre de la Empresa] contigo en relación con este sitio web.</p>
+                
+                <h2 class="mb-3">1. Términos</h2>
+                <p>El acceso y uso del sitio web están sujetos a los siguientes términos y condiciones. Si no estás de acuerdo con estos términos y condiciones, por favor no utilices nuestro sitio web.</p>
+                
+                <h2 class="mb-3">2. Uso del Sitio</h2>
+                <p>El contenido de las páginas de este sitio web es para tu información general y uso exclusivo. Está sujeto a cambios sin previo aviso.</p>
+                
+                <h2 class="mb-3">3. Modificaciones</h2>
+                <p>[Nombre de la Empresa] se reserva el derecho de cambiar o modificar estos términos en cualquier momento sin previo aviso. Es tu responsabilidad revisar estos términos periódicamente para estar al tanto de cualquier cambio.</p>
+                
+                <h2 class="mb-3">4. Privacidad</h2>
+                <p>Por favor, revisa nuestra Política de Privacidad para entender nuestras prácticas respecto a la información que recopilamos de nuestros usuarios.</p>
+                
+                <h2 class="mb-3">5. Propiedad Intelectual</h2>
+                <p>Todo el contenido del sitio web, incluyendo texto, gráficos, logotipos, iconos, imágenes, clips de audio, y software, es propiedad de [Nombre de la Empresa] o sus proveedores de contenido y está protegido por leyes de derechos de autor y otras leyes de propiedad intelectual.</p>
+                
+                <h2 class="mb-3">6. Limitación de Responsabilidad</h2>
+                <p>[Nombre de la Empresa] no será responsable de ningún daño directo, indirecto, incidental, especial, consecuente o punitivo que resulte del uso o la imposibilidad de usar este sitio web o los servicios ofrecidos en él.</p>
+                
+                <h2 class="mb-3">7. Ley Aplicable</h2>
+                <p>Estos términos y condiciones se regirán e interpretarán de acuerdo con las leyes de [País].</p>
+                
+                <h2 class="mb-3">8. Contacto</h2>
+                <p>Si tienes alguna pregunta sobre estos Términos y Condiciones, por favor contáctanos en [Correo Electrónico].</p>
             </div>
         </main>
         <footer>
             <ul class="menu-footer">
                 <li class="descripcion">
-                    <h2>Hispanic American Legal Services</h2>
-                    <ul >
-                        <p>HALS ofrece una serie de servicios, puede ponerse en contacto con nosotros y uno de nuestros representantes estará en contacto con Usted.</p>
-                    </ul>
-                </li>
-                <li>
-                    <h4>Inmigración en Familia</h4>
+                    <h2>Inventory Manager</h2>
                     <ul>
-                        <a href="#"><li>Perdones</li></a>
-                        <a href="#"><li>Tarjeta verde a travez de familia</li></a>
-                        <a href="#"><li>Tarjeta verde a travez de oferta de empleo</li></a>
-                        <a href="#"><li>Convertirse en ciudadano americano</li></a>
+                        <p>HALS ofrece una serie de servicios, puede ponerse en contacto con nosotros y uno de nuestros representantes estará en contacto con Usted.</p>
                     </ul>
                 </li>
                 <li>
                     <h4>Otros Enlaces</h4>
                     <ul>
-                        <a href="#"><li>Inicio</li></a>
-                        <a href="#"><li>Descripcion</li></a>
-                        <a href="#"><li>Servicios</li></a>
-                        <a href="#"><li>Citas</li></a>
-                        <a href="#"><li>Importante</li></a>
-                        <a href="#"><li>Registro</li></a>
+                        <h:link outcome="index.xhtml"><li>Inicio</li></h:link>
+                        <h:link outcome="index.xhtml#descripcion"><li>Descripción</li></h:link>
+                        <h:link outcome="index.xhtml#servicios"><li>Servicios</li></h:link>
+                        <h:link outcome="index.xhtml#registro"><li>Registro</li></h:link>
                     </ul>
                 </li>
                 <li>
-                    <h4>Contactenos</h4>
+                    <h4>Contáctenos</h4>
                     <ul>
-                        <li><a href="#">Terminos y condiciones</a></li>
-                        <li><a href="#">Privacidad</a></li>
+                        <h:link outcome="terms.xhtml"><li>Términos y condiciones</li></h:link>
+                        <h:link outcome="#"><li>Privacidad</li></h:link>
                     </ul>
                 </li>
             </ul>
         </footer>
-        <h:outputStylesheet name="terms.css" library="css"/>
     </h:body>
 </html>
