@@ -15,6 +15,7 @@ import org.springframework.context.annotation.Bean;
 public class Main extends SpringBootServletInitializer{
 
     public static void main(String[] args) {
+
         SpringApplication.run(Main.class, args);
     }
 
@@ -28,6 +29,9 @@ public class Main extends SpringBootServletInitializer{
         srb.setServlet(new FacesServlet());
         srb.setUrlMappings(Arrays.asList("*.xhtml"));
         srb.setLoadOnStartup(1);
+        
         return srb;
     }
+
+
 }

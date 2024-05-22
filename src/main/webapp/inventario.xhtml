@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3c.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:p="http://primefaces.org/ui"
+xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+
+    
+    <h:head>
+        <title>Consulta Inventario</title>
+        
+    </h:head>
+    <h:body>
+        <div class="content">
+            <div class="titulo">
+                <h1>Consulta Inventario</h1>
+            </div>
+            <div class="box">
+                <div class="box-form">
+                    <h:form id="queries_form">
+                        <div class="container">
+                            <p:outputLabel for="producto" styleClass="text">Producto </p:outputLabel>
+                            <p:inputText id="producto" value="#{InventarioBean.producto}" required="true" styleClass="input"/>
+                        </div>
+                        <div class="container">
+                            <p:outputLabel for="unidad" styleClass="text">Unidades</p:outputLabel>
+                            <p:inputText id="unidad" value="#{InventarioBean.unidad}" required="true" styleClass="input"/>
+                        </div>
+                        <div class="container">
+                            <p:outputLabel for="correo" styleClass="text">Correo</p:outputLabel>
+                            <p:inputText id="correo" value="#{InventarioBean.correo}" required="true" styleClass="input"/>
+                        </div>
+                        <div class="container">
+                            <p:outputLabel for="descripcion" styleClass="text">Descripcion</p:outputLabel>
+                            <p:inputTextarea id="descripcion" value="#{InventarioBean.descripcion}" required="true" styleClass="input"/>
+                        </div>
+                        <div class="container">
+                            <p:outputLabel for="fecha" value="Fecha"/>
+                            <p:datePicker id="fecha" value="#{InventarioBean.horario}" showTime="true" required="true" />
+                        </div>
+                    
+                        <br></br>
+                        <div class="block">
+                            <p:commandButton value="Submit" update="queries_form" action="#{InventarioBean.agregarInventario()}"  styleClass="button"></p:commandButton>
+                        </div>
+                    </h:form>
+                    <div class="container">
+                        <p>Al enviar este formulario esta aceptando nuestros <a href="terms.xhtml">Terminos y condiciones</a></p>
+                    </div>
+
+                </div>
+                <div class="box-info">
+
+                    <h2>Contacto</h2>
+                    <br></br>
+                    <br></br>
+                    <ul>
+                        <li>1730 Park St Suite 203, Naperville IL 60563</li>
+                        <br></br>
+                        <br></br>
+                        <li>+1 773 309 2121</li>
+                        <br></br>
+                        <br></br>
+                        <li>inventario@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h:outputStylesheet name="inventario.css" library="css"/>
+    </h:body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3c.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:p="http://primefaces.org/ui"
+xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+
+
+    <h:head>
+        <title>Administración</title>
+    </h:head>
+    <h:body>
+        <header>
+            <h1>Información Inventarios</h1>
+            <ul>
+                <li><a href="index.xhtml">Inicio</a></li>
+            </ul>
+        </header>
+        
+        <main>
+            <div class="contenido">
+                <div class="tabla">
+                    <h:form id="informacion">
+                        <p:dataTable var="datos" value="#{InventarioBean.getInventarioList()}">
+
+                            <p:column headerText="Correo">
+                                <h:outputText value="#{datos.getId()}" />
+                            </p:column>
+
+                            <p:column headerText="producto">
+                                <h:outputText value="#{datos.getProducto()}" />
+                            </p:column>
+
+                            <p:column headerText="unidad">
+                                <h:outputText value="#{datos.getUnidad()}" />
+                            </p:column>
+                            <p:column headerText="Descripcion">
+                                <h:outputText value="#{datos.getDescripcion()}" />
+                            </p:column>
+                            <p:column headerText="Estado">
+                                <label for="Estados"></label>
+                                <h:outputText value="#{datos.getEstado()}" />
+                            </p:column>
+
+                            <p:column headerText="Horario">
+                                <h:outputText value="#{datos.getHorario()}" />
+                            </p:column>
+
+                            <p:column>
+                                <p:commandButton value="Atender" update="informacion" action="#{#datos.changeEstadoAtendido()}" type="button" icon="pi pi-bell" styleClass="rounded-button ui-button-warning"></p:commandButton>
+                            </p:column>
+
+                        </p:dataTable>
+                    </h:form>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="imagen">
+                <p>
+                    <p:graphicImage class="logo" value="images/logo.png" alt="Logo de la empresa" />
+                </p>
+            </div>
+        </footer>   
+        <h:outputStylesheet name="admin.css" library="css"/>
+    </h:body>
+</html>
