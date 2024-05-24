@@ -2,22 +2,20 @@
 
  
 
-El proyecto se basa en una pagina principal para una abogada, donde existen dos secciones una privada(admin) a la cual se ingresa con un usuario y contraseña, por otra parte tenemos la del usurio normal(publica) donde este puede agendar un cita para tener una asesoria juridica.
+El proyecto se basa en una pagina web donde se podra gestionar el inventario de empresas de tecnologia
 
 ## General
 
-* **Asignatura** Ciclos de vida y desarollo de software
-* **Periodo academico** 2023-1
+* **Asignatura** Arquitectura Empresarial
+* **Periodo academico** 2024-1
 
 
 ## Authors
 
  
-* **Ivan Dario Lemus Moya** - *Product Owner*
-* **Sebastian David Blanco** - *Scrum Master*
-* **Juan Pablo Daza** - *Scrum Developer*
-* **Juan Sebastian Rodriguez** - *Scrum Developer*
-* **Jose Alejandro Correa** - *Scrum Developer* 
+* **Jose Alejandro Correa Rodriguez** 
+* **Johan Sebastian Martinez Garcia** 
+
  
 
 
@@ -27,26 +25,18 @@ El proyecto se basa en una pagina principal para una abogada, donde existen dos 
 
  
 
-Se encuentra una pagina principal (/index.xhtml) donde el usuario puede crear una consulta, donde este tiene que poner una firma para aceptar los terminos y condiciones, ademas de que llegara una notificacion al correo que agrego confirmando la consulta creada
+Se encuentra una pagina principal (/index.xhtml) donde el usuario puede crear una gestion del inventario, donde este tiene que poner una firma para aceptar los terminos y condiciones, ademas de que llegara una notificacion al correo que agrego confirmando la gestion creada.
 
 * queries2.xhtml
 
 En cuanto al la parte de administracion, el administrador ingresa por medio de un login (/login.xhtml) con un usuario y contraseñas unicas.
 
-* user = sebastian
+* user = jose
 * password = 123
 
 Al ingresar encontrara una tabla con la informacion agregada por el usuario
 
-* Correo
-* Nombre
-* Apellido
-* Telefono
-* Observacion (usuario)
-* Estado (consulta)
-* Firma
-* Horario
-* Boton de atender (Funcionalidad no implementada correctamente)
+
 
 
  
@@ -74,18 +64,4 @@ Para ir a la pagina principal, luego de correr el comando anterior entrar a [loc
 
  
 
- 
 
-
-## Architecture and design
-
-![](img/E-R.png)
-![](img/Administracion.png)
-![](img/Publico.png)
-
-
-## Acknowledgments
-
- 
-
-* Quiero expresar mi más sincera gratitud al equipo de ArtTk por su inestimable ayuda en el desarrollo de este proyecto de programación. 
